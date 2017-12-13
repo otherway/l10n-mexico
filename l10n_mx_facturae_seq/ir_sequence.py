@@ -215,7 +215,7 @@ class ir_sequence(osv.Model):
                     """
             # return super(ir_sequence, self).get_id(cr, uid, sequence_id,
             # test, context=context)
-            return super(ir_sequence, self).get_id(cr, uid, sequence_id, test)
+            return super(ir_sequence, self).get_id(cr, uid, sequence_id, test, context=context)
         else:
             # inicia copy & paste, de una seccion de la funcion original
             if test == 'id=%s':
@@ -247,7 +247,7 @@ class ir_sequence(osv.Model):
                     if not approval_id:
                         raise except_orm(
                             'Error !', 'No hay una aprobacion valida de folios.')
-                    return super(ir_sequence, self).get_id(cr, uid, res['id'], 'id')
-            return super(ir_sequence, self).get_id(cr, uid, sequence_id, test)
+                    return super(ir_sequence, self).get_id(cr, uid, res['id'], 'id', context=context)
+            return super(ir_sequence, self).get_id(cr, uid, sequence_id, test, context=context)
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
