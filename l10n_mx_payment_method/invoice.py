@@ -25,59 +25,53 @@
 #
 ##############################################################################
 
-from openerp.tools.translate import _
-from openerp.osv import fields, osv
-from openerp import tools
-from openerp import netsvc
-from openerp import release
+from openerp import models, fields, api, _
 
-import time
-from xml.dom import minidom
-import os
-import base64
-import hashlib
-import tempfile
-import codecs
-
-from datetime import datetime
-
-
-class account_invoice(osv.Model):
+class account_invoice(models.Model):
     _inherit = 'account.invoice'
 
-    
-    def onchange_partner_id(self, cr, uid, ids, type, partner_id,
-                            date_invoice=False, payment_term=False,
-                            partner_bank_id=False, company_id=False,
-                            context=None):
-        res =  super(account_invoice, self).onchange_partner_id(cr, uid, ids, type, partner_id,
+    @api.multi
+    def onchange_partner_id(self, type, partner_id, date_invoice=False,
+            payment_term=False, partner_bank_id=False, company_id=False):
+        
+        res =  super(account_invoice, self).onchange_partner_id(type, partner_id,
             date_invoice=date_invoice, payment_term=payment_term, 
-            partner_bank_id=partner_bank_id, company_id=company_id, context=None)
+            partner_bank_id=partner_bank_id, company_id=company_id)
         pay_method_id = False
+        p = self.env['res.partner'].browse(partner_id or False)
         if partner_id:
-            partner_obj = self.pool.get('res.partner')
-            partner = partner_obj.browse(cr, uid, partner_id)
-            pay_method_id = partner and partner.pay_method_id and \
-                partner.pay_method_id.id or False
+            pay_method_id = partner_id and p.pay_method_id and \
+                p.pay_method_id.id or False
         res['value']['pay_method_ids'] = [pay_method_id]
         return res
 
-    _columns = {
-        'forma_pago'    : fields.char('Forma de Pago', required=False),
-        'pay_method_ids': fields.many2many('pay.method', 'account_invoice_pay_method_rel', 'invoice_id', 'pay_method_id', 'Métodos de Pago'),
-        'pay_method_id': fields.many2one('pay.method', 'Payment Method',
-            readonly=True, states={'draft': [('readonly', False)]},
-                help='Indicates the way it was paid or will be paid the invoice,\
-                where the options could be: check, bank transfer, reservoir in \
-                account bank, credit card, cash etc. If not know as will be \
-                paid the invoice, leave empty and the XML show “Unidentified”.'),
-        'acc_payment': fields.many2one('res.partner.bank', 'Account Number',
-            readonly=True, states={'draft': [('readonly', False)]},
-                help='Is the account with which the client pays the invoice, \
-                if not know which account will used for pay leave empty and \
-                the XML will show "“Unidentified”".'),
-    }
+    @api.multi
+    def onchange_payment_term_date_invoice(self, payment_term_id, date_invoice):
 
-    _defaults = {
-        'forma_pago': 'PAGO EN UNA SOLA EXHIBICION',
-    }
+        res =  super(account_invoice, self).onchange_payment_term_date_invoice(
+            payment_term_id, date_invoice)
+        forma_pago = 'PAGO EN UNA SOLA EXHIBICION'
+        p = self.env['account.payment.term'].browse(payment_term_id or False)
+        if payment_term_id and p.line_ids and len(p.line_ids) > 1:
+            forma_pago = 'PAGOS EN PARCIALIDADES'
+        res['value']['forma_pago'] = forma_pago
+        return res
+    
+    forma_pago = fields.Char('Forma de Pago', required=False)
+    pay_method_ids = fields.Many2many('pay.method', 
+        'account_invoice_pay_method_rel', 
+        'invoice_id', 'pay_method_id', 'Métodos de Pago')
+    pay_method_id = fields.Many2one('pay.method', 'Payment Method',
+        readonly=True, states={'draft': [('readonly', False)]},
+            help='Indicates the way it was paid or will be paid the invoice,\
+            where the options could be: check, bank transfer, reservoir in \
+            account bank, credit card, cash etc. If not know as will be \
+            paid the invoice, leave empty and the XML show “Unidentified”.')
+    acc_payment = fields.Many2one('res.partner.bank', 'Account Number',
+        readonly=True, states={'draft': [('readonly', False)]},
+            help='Is the account with which the client pays the invoice, \
+            if not know which account will used for pay leave empty and \
+            the XML will show "“Unidentified”".')
+
+
+            
