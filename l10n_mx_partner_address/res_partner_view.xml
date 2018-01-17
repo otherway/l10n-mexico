@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_partner_form" model="ir.ui.view">
+            <field name="name">l10n_mx_partner_address.res.partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <field name="street" position="after">
+                    <field name="l10n_mx_street3" placeholder="No Externo..."/>
+                    <field name="l10n_mx_street4" placeholder="No Interno..."/>
+                </field>
+                <field name="street2" position="attributes">
+                    <attribute name="placeholder">Colonia...</attribute>
+                </field>
+                <field name="street2" position="after">
+                    <field name="l10n_mx_city2" placeholder="Delegación..."/>
+                </field>
+                <field name="city" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                    <attribute name="style">width: 50%</attribute>
+                </field>
+                <field name="city" position="after">
+                    <field name="city_id" on_change="onchange_city(city_id)" placeholder="Ciudad..." style="width: 40%"/>
+                </field>
+                <field name="state_id" position="attributes">
+                    <field name="on_change">onchange_state_city(state_id,city_id)</field>
+                </field>
+                <xpath expr="//field[@name='child_ids']/form/sheet/group[2]/div/field[@name='street']" position="after">
+                    <field name="l10n_mx_street3" placeholder="No Externo..."/>
+                    <field name="l10n_mx_street4" placeholder="No Interno..."/>
+                </xpath>
+                <xpath expr="//field[@name='child_ids']/form/sheet/group[2]/div/field[@name='street2']" position="attributes">
+                    <attribute name="placeholder">Colonia...</attribute>
+                </xpath>
+                <xpath expr="//field[@name='child_ids']/form/sheet/group[2]/div/field[@name='street2']" position="after">
+                    <field name="l10n_mx_city2" placeholder="Delegación..."/>
+                </xpath>
+                <xpath expr="//field[@name='child_ids']/form/sheet/group[2]/div/div[@class='address_format']/field[@name='city']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                    <attribute name="style">width: 50%</attribute>
+                </xpath>
+                <xpath expr="//field[@name='child_ids']/form/sheet/group[2]/div/div[@class='address_format']/field[@name='city']" position="after">
+                    <field name="city_id" on_change="onchange_city(city_id)" placeholder="Ciudad..." style="width: 40%"/>
+                </xpath>
+                <xpath expr="//field[@name='child_ids']/form/sheet/group[2]/div/div[@class='address_format']/field[@name='state_id']" position="attributes">
+                    <field name="on_change">onchange_state_city(state_id,city_id)</field>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

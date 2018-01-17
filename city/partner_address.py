@@ -64,6 +64,7 @@ class res_partner(osv.Model):
                 cr, uid, city_id, context)
             return {'value': {'city': city.name,
                     'state_id': city.state_id.id,
+                    'zip': city.code,
                     'country_id': city.country_id and city.country_id.id or False}}
         return {}
 
