@@ -974,6 +974,18 @@ SUBCUENTAS DE ORDEN 1 (Pasivo a corto plazo)
 	<field name="name">Otros pasivos a corto plazo</field>
 </record>
 
+<!--
+SUBCUENTAS DE ORDEN 1 (Pasivo a largo plazo)
+-->
+
+<record id="account_tmpl_251" model="account.account.template">
+	<field name="code">251</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_200_02"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name"></field>
+</record>
 
 
 
