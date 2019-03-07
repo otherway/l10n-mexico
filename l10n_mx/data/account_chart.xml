@@ -12,11 +12,11 @@ CUENTA DE AGRUPACION DEL CATALOGO
 -->
  
 <record id="account_tmpl_0" model="account.account.template">
-		<field name="code">0</field>
-		<field name="reconcile" eval="False"/>
-		<field name="type">view</field>
-		<field name="user_type" ref="account.data_account_type_view"/>
-		<field name="name">Catalogo de cuentas</field>
+	<field name="code">0</field>
+	<field name="reconcile" eval="False"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Catalogo de cuentas</field>
 </record>
 
 <!--
@@ -24,77 +24,76 @@ CUENTAS DE ORDEN 0
 -->
 
 <record id="account_tmpl_100" model="account.account.template">
-		<field name="code">100</field>
-		<field name="reconcile" eval="False"/>
-        <field name="parent_id" ref="account_tmpl_0"/>
-		<field name="type">view</field>
-		<field name="user_type" ref="account.data_account_type_view"/>
-		<field name="name">Activo</field>
+	<field name="code">100</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_0"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Activo</field>
 </record>
 
 <record id="account_tmpl_200" model="account.account.template">
-		<field name="code">200</field>
-		<field name="reconcile" eval="False"/>
-        <field name="parent_id" ref="account_tmpl_0"/>
-		<field name="type">view</field>
-		<field name="user_type" ref="account.data_account_type_view"/>
-		<field name="name">Pasivo</field>
+	<field name="code">200</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_0"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Pasivo</field>
 </record>
 
 <record id="account_tmpl_300" model="account.account.template">
-		<field name="code">300</field>
-		<field name="reconcile" eval="False"/>
-        <field name="parent_id" ref="account_tmpl_0"/>
-		<field name="type">view</field>
-		<field name="user_type" ref="account.data_account_type_view"/>
-		<field name="name">Capital contable</field>
+	<field name="code">300</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_0"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Capital contable</field>
 </record>
 
 <record id="account_tmpl_400" model="account.account.template">
-		<field name="code">400</field>
-		<field name="reconcile" eval="False"/>
-        <field name="parent_id" ref="account_tmpl_0"/>
-		<field name="type">view</field>
-		<field name="user_type" ref="account.data_account_type_view"/>
-		<field name="name">Ingresos</field>
+	<field name="code">400</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_0"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Ingresos</field>
 </record>
 
 <record id="account_tmpl_500" model="account.account.template">
-		<field name="code">500</field>
-		<field name="reconcile" eval="False"/>
-        <field name="parent_id" ref="account_tmpl_0"/>
-		<field name="type">view</field>
-		<field name="user_type" ref="account.data_account_type_view"/>
-		<field name="name">Costos</field>
+	<field name="code">500</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_0"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Costos</field>
 </record>
 
 <record id="account_tmpl_600" model="account.account.template">
-		<field name="code">600</field>
-		<field name="reconcile" eval="False"/>
-        <field name="parent_id" ref="account_tmpl_0"/>
-		<field name="type">view</field>
-		<field name="user_type" ref="account.data_account_type_view"/>
-		<field name="name">Gastos</field>
+	<field name="code">600</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_0"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Gastos</field>
 </record>
 
 <record id="account_tmpl_700" model="account.account.template">
-		<field name="code">700</field>
-		<field name="reconcile" eval="False"/>
-        <field name="parent_id" ref="account_tmpl_0"/>
-		<field name="type">view</field>
-		<field name="user_type" ref="account.data_account_type_view"/>
-		<field name="name">Resultado integral de financiamiento</field>
+	<field name="code">700</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_0"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Resultado integral de financiamiento</field>
 </record>
 
 <record id="account_tmpl_800" model="account.account.template">
-		<field name="code">800</field>
-		<field name="reconcile" eval="False"/>
-        <field name="parent_id" ref="account_tmpl_0"/>
-		<field name="type">view</field>
-		<field name="user_type" ref="account.data_account_type_view"/>
-		<field name="name">Cuentas de orden</field>
+	<field name="code">800</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_0"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Cuentas de orden</field>
 </record>
-
 
 <!--
 SUBCUENTAS DE ORDEN 0
@@ -1801,7 +1800,7 @@ SUBCUENTAS DE ORDEN 2 (100.02 Activo a largo plazo)
 </record>
 
 <record id="account_tmpl_171_16" model="account.account.template">
-	<field name="code">171.16/field>
+	<field name="code">171.16</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_171"/>
 	<field name="type">view</field>
@@ -1959,8 +1958,7 @@ SUBCUENTAS DE ORDEN 2 (100.02 Activo a largo plazo)
 	<field name="parent_id" ref="account_tmpl_172"/>
 	<field name="type">view</field>
 	<field name="user_type" ref="account.data_account_type_view"/>
-	<field name="name">Pérdida por deterioro acumulado de equipo de adaptaciones para personas con capacidades
-diferentes</field>
+	<field name="name">Pérdida por deterioro acumulado de equipo de adaptaciones para personas con capacidades diferentes</field>
 </record>
 
 <record id="account_tmpl_172_16" model="account.account.template">
@@ -2017,8 +2015,347 @@ diferentes</field>
 	<field name="name">Regalías, asistencia técnica y otros gastos diferidos</field>
 </record>
 
+<record id="account_tmpl_176_01" model="account.account.template">
+	<field name="code">176.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_176"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Activos intangibles</field>
+</record>
 
+<record id="account_tmpl_177_01" model="account.account.template">
+	<field name="code">177.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_177"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Gastos de organización</field>
+</record>
 
+<record id="account_tmpl_178_01" model="account.account.template">
+	<field name="code">178.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_178"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Investigación y desarrollo de mercado</field>
+</record>
+
+<record id="account_tmpl_179_01" model="account.account.template">
+	<field name="code">179.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_179"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Marcas y patentes</field>
+</record>
+
+<record id="account_tmpl_180_01" model="account.account.template">
+	<field name="code">180.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_180"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Crédito mercantil</field>
+</record>
+
+<record id="account_tmpl_181_01" model="account.account.template">
+	<field name="code">181.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_181"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Gastos de instalación</field>
+</record>
+
+<record id="account_tmpl_182_01" model="account.account.template">
+	<field name="code">182.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_182"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Otros activos diferidos</field>
+</record>
+
+<record id="account_tmpl_183_01" model="account.account.template">
+	<field name="code">183.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_183"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Amortización acumulada de gastos diferidos</field>
+</record>
+
+<record id="account_tmpl_183_02" model="account.account.template">
+	<field name="code">183.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_183"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Amortización acumulada de gastos pre operativos</field>
+</record>
+
+<record id="account_tmpl_183_03" model="account.account.template">
+	<field name="code">183.03</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_183"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Amortización acumulada de regalías, asistencia técnica y otros gastos diferidos</field>
+</record>
+
+<record id="account_tmpl_183_04" model="account.account.template">
+	<field name="code">183.04</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_183"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Amortización acumulada de activos intangibles</field>
+</record>
+
+<record id="account_tmpl_183_05" model="account.account.template">
+	<field name="code">183.05</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_183"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Amortización acumulada de gastos de organización</field>
+</record>
+
+<record id="account_tmpl_183_06" model="account.account.template">
+	<field name="code">183.06</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_183"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Amortización acumulada de investigación y desarrollo de mercado</field>
+</record>
+
+<record id="account_tmpl_183_07" model="account.account.template">
+	<field name="code">183.07</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_183"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Amortización acumulada de marcas y patentes</field>
+</record>
+
+<record id="account_tmpl_183_08" model="account.account.template">
+	<field name="code">183.08</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_183"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Amortización acumulada de crédito mercantil</field>
+</record>
+
+<record id="account_tmpl_183_09" model="account.account.template">
+	<field name="code">183.09</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_183"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Amortización acumulada de gastos de instalación</field>
+</record>
+
+<record id="account_tmpl_183_10" model="account.account.template">
+	<field name="code">183.10</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_183"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Amortización acumulada de otros activos diferidos</field>
+</record>
+
+<record id="account_tmpl_184_01" model="account.account.template">
+	<field name="code">184.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_184"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Depósitos de fianzas</field>
+</record>
+
+<record id="account_tmpl_184_02" model="account.account.template">
+	<field name="code">184.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_184"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Depósitos de arrendamiento de bienes inmuebles</field>
+</record>
+
+<record id="account_tmpl_184_03" model="account.account.template">
+	<field name="code">184.03</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_184"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Otros depósitos en garantía</field>
+</record>
+
+<record id="account_tmpl_185_01" model="account.account.template">
+	<field name="code">185.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_185"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Impuestos diferidos ISR</field>
+</record>
+
+<record id="account_tmpl_186_01" model="account.account.template">
+	<field name="code">186.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_186"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Cuentas y documentos por cobrar a largo plazo nacional</field>
+</record>
+
+<record id="account_tmpl_186_02" model="account.account.template">
+	<field name="code">186.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_186"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Cuentas y documentos por cobrar a largo plazo extranjero</field>
+</record>
+
+<record id="account_tmpl_186_03" model="account.account.template">
+	<field name="code">186.03</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_186"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Cuentas y documentos por cobrar a largo plazo nacional parte relacionada</field>
+</record>
+
+<record id="account_tmpl_186_04" model="account.account.template">
+	<field name="code">186.04</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_186"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Cuentas y documentos por cobrar a largo plazo extranjero parte relacionada</field>
+</record>
+
+<record id="account_tmpl_186_05" model="account.account.template">
+	<field name="code">186.05</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_186"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Intereses por cobrar a largo plazo nacional</field>
+</record>
+
+<record id="account_tmpl_186_06" model="account.account.template">
+	<field name="code">186.06</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_186"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Intereses por cobrar a largo plazo extranjero</field>
+</record>
+
+<record id="account_tmpl_186_07" model="account.account.template">
+	<field name="code">186.07</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_186"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Intereses por cobrar a largo plazo nacional parte relacionada</field>
+</record>
+
+<record id="account_tmpl_186_08" model="account.account.template">
+	<field name="code">186.08</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_186"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Intereses por cobrar a largo plazo extranjero parte relacionada</field>
+</record>
+
+<record id="account_tmpl_186_09" model="account.account.template">
+	<field name="code">186.09</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_186"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Otras cuentas y documentos por cobrar a largo plazo</field>
+</record>
+
+<record id="account_tmpl_186_10" model="account.account.template">
+	<field name="code">186.10</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_186"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Otras cuentas y documentos por cobrar a largo plazo parte relacionada</field>
+</record>
+
+<record id="account_tmpl_187_01" model="account.account.template">
+	<field name="code">187.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_187"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Participación de los trabajadores en las utilidades diferidas</field>
+</record>
+
+<record id="account_tmpl_188_01" model="account.account.template">
+	<field name="code">188.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_188"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Inversiones a largo plazo en subsidiarias</field>
+</record>
+
+<record id="account_tmpl_188_02" model="account.account.template">
+	<field name="code">188.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_188"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Inversiones a largo plazo en asociadas</field>
+</record>
+
+<record id="account_tmpl_188_03" model="account.account.template">
+	<field name="code">188.03</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_188"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Otras inversiones permanentes en acciones</field>
+</record>
+
+<record id="account_tmpl_189_01" model="account.account.template">
+	<field name="code">189.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_189"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Estimación por deterioro de inversiones permanentes en acciones</field>
+</record>
+
+<record id="account_tmpl_190_01" model="account.account.template">
+	<field name="code">190.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_190"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Otros instrumentos financieros</field>
+</record>
+
+<record id="account_tmpl_191_01" model="account.account.template">
+	<field name="code">191.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_191"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Otros activos a largo plazo</field>
+</record>
 
 <!--
 SUBCUENTAS DE ORDEN 1 (201.01 Pasivo a corto plazo)
@@ -2181,6 +2518,802 @@ SUBCUENTAS DE ORDEN 1 (201.01 Pasivo a corto plazo)
 	<field name="code">218</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_200_01"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Otros pasivos a corto plazo</field>
+</record>
+
+<!--
+SUBCUENTAS DE ORDEN 2 (201.01 Pasivo a corto plazo)
+-->
+
+<record id="account_tmpl_201_01" model="account.account.template">
+	<field name="code">201.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_201"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Proveedores nacionales</field>
+</record>
+
+<record id="account_tmpl_201_02" model="account.account.template">
+	<field name="code">201.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_201"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Proveedores extranjeros</field>
+</record>
+
+<record id="account_tmpl_201_03" model="account.account.template">
+	<field name="code">201.03</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_201"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Proveedores nacionales parte relacionada</field>
+</record>
+
+<record id="account_tmpl_201_04" model="account.account.template">
+	<field name="code">201.04</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_201"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Proveedores extranjeros parte relacionada</field>
+</record>
+
+<record id="account_tmpl_202_01" model="account.account.template">
+	<field name="code">202.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_202"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Documentos por pagar bancario y financiero nacional</field>
+</record>
+
+<record id="account_tmpl_202_02" model="account.account.template">
+	<field name="code">202.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_202"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Documentos por pagar bancario y financiero extranjero</field>
+</record>
+
+<record id="account_tmpl_202_03" model="account.account.template">
+	<field name="code">202.03</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_202"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Documentos y cuentas por pagar a corto plazo nacional</field>
+</record>
+
+<record id="account_tmpl_202_04" model="account.account.template">
+	<field name="code">202.04</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_202"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Documentos y cuentas por pagar a corto plazo extranjero</field>
+</record>
+
+<record id="account_tmpl_202_05" model="account.account.template">
+	<field name="code">202.05</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_202"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Documentos y cuentas por pagar a corto plazo nacional parte relacionada</field>
+</record>
+
+<record id="account_tmpl_202_06" model="account.account.template">
+	<field name="code">202.06</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_202"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Documentos y cuentas por pagar a corto plazo extranjero parte relacionada</field>
+</record>
+
+<record id="account_tmpl_202_07" model="account.account.template">
+	<field name="code">202.07</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_202"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Intereses por pagar a corto plazo nacional</field>
+</record>
+
+<record id="account_tmpl_202_08" model="account.account.template">
+	<field name="code">202.08</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_202"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Intereses por pagar a corto plazo extranjero</field>
+</record>
+
+<record id="account_tmpl_202_09" model="account.account.template">
+	<field name="code">202.09</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_202"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Intereses por pagar a corto plazo nacional parte relacionada</field>
+</record>
+
+<record id="account_tmpl_202_10" model="account.account.template">
+	<field name="code">202.10</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_202"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Intereses por pagar a corto plazo extranjero parte relacionada</field>
+</record>
+
+<record id="account_tmpl_202_11" model="account.account.template">
+	<field name="code">202.11</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_202"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Dividendo por pagar nacional</field>
+</record>
+
+<record id="account_tmpl_202_12" model="account.account.template">
+	<field name="code">202.12</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_202"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Dividendo por pagar extranjero</field>
+</record>
+
+<record id="account_tmpl_203_01" model="account.account.template">
+	<field name="code">203.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Rentas cobradas por anticipado a corto plazo nacional</field>
+</record>
+
+<record id="account_tmpl_203_02" model="account.account.template">
+	<field name="code">203.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Rentas cobradas por anticipado a corto plazo extranjero</field>
+</record>
+
+<record id="account_tmpl_203_03" model="account.account.template">
+	<field name="code">203.03</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Rentas cobradas por anticipado a corto plazo nacional parte relacionada</field>
+</record>
+
+<record id="account_tmpl_203_04" model="account.account.template">
+	<field name="code">203.04</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Rentas cobradas por anticipado a corto plazo extranjero parte relacionada</field>
+</record>
+
+<record id="account_tmpl_203_05" model="account.account.template">
+	<field name="code">203.05</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Intereses cobrados por anticipado a corto plazo nacional</field>
+</record>
+
+<record id="account_tmpl_203_06" model="account.account.template">
+	<field name="code">203.06</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Intereses cobrados por anticipado a corto plazo extranjero</field>
+</record>
+
+<record id="account_tmpl_203_07" model="account.account.template">
+	<field name="code">203.07</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Intereses cobrados por anticipado a corto plazo nacional parte relacionada</field>
+</record>
+
+<record id="account_tmpl_203_08" model="account.account.template">
+	<field name="code">203.08</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Intereses cobrados por anticipado a corto plazo extranjero parte relacionada</field>
+</record>
+
+<record id="account_tmpl_203_09" model="account.account.template">
+	<field name="code">203.09</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Factoraje financiero cobrados por anticipado a corto plazo nacional</field>
+</record>
+
+<record id="account_tmpl_203_10" model="account.account.template">
+	<field name="code">203.10</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Factoraje financiero cobrados por anticipado a corto plazo extranjero</field>
+</record>
+
+<record id="account_tmpl_203_11" model="account.account.template">
+	<field name="code">203.11</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Factoraje financiero cobrados por anticipado a corto plazo nacional parte relacionada</field>
+</record>
+
+<record id="account_tmpl_203_12" model="account.account.template">
+	<field name="code">203.12</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Factoraje financiero cobrados por anticipado a corto plazo extranjero parte relacionada</field>
+</record>
+
+<record id="account_tmpl_203_13" model="account.account.template">
+	<field name="code">203.13</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Arrendamiento financiero cobrados por anticipado a corto plazo nacional</field>
+</record>
+
+<record id="account_tmpl_203_14" model="account.account.template">
+	<field name="code">203.14</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Arrendamiento financiero cobrados por anticipado a corto plazo extranjero</field>
+</record>
+
+<record id="account_tmpl_203_15" model="account.account.template">
+	<field name="code">203.15</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Arrendamiento financiero cobrados por anticipado a corto plazo nacional parte relacionada</field>
+</record>
+
+<record id="account_tmpl_203_16" model="account.account.template">
+	<field name="code">203.16</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Arrendamiento financiero cobrados por anticipado a corto plazo extranjero parte relacionada</field>
+</record>
+
+<record id="account_tmpl_203_17" model="account.account.template">
+	<field name="code">203.17</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Derechos fiduciarios</field>
+</record>
+
+<record id="account_tmpl_203_18" model="account.account.template">
+	<field name="code">203.18</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_203"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Otros cobros anticipados</field>
+</record>
+
+<record id="account_tmpl_204_01" model="account.account.template">
+	<field name="code">204.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_204"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Instrumentos financieros a corto plazo</field>
+</record>
+
+<record id="account_tmpl_205_01" model="account.account.template">
+	<field name="code">205.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_205"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Socios, accionistas o representante legal</field>
+</record>
+
+<record id="account_tmpl_205_02" model="account.account.template">
+	<field name="code">205.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_205"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Acreedores diversos a corto plazo nacional</field>
+</record>
+
+<record id="account_tmpl_205_03" model="account.account.template">
+	<field name="code">205.03</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_205"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Acreedores diversos a corto plazo extranjero</field>
+</record>
+
+<record id="account_tmpl_205_04" model="account.account.template">
+	<field name="code">205.04</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_205"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Acreedores diversos a corto plazo nacional parte relacionada</field>
+</record>
+
+<record id="account_tmpl_205_05" model="account.account.template">
+	<field name="code">205.05</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_205"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Acreedores diversos a corto plazo extranjero parte relacionada</field>
+</record>
+
+<record id="account_tmpl_205_06" model="account.account.template">
+	<field name="code">205.06</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_205"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Otros acreedores diversos a corto plazo</field>
+</record>
+
+<record id="account_tmpl_206_01" model="account.account.template">
+	<field name="code">206.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_206"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Anticipo de cliente nacional</field>
+</record>
+
+<record id="account_tmpl_206_02" model="account.account.template">
+	<field name="code">206.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_206"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Anticipo de cliente extranjero</field>
+</record>
+
+<record id="account_tmpl_206_03" model="account.account.template">
+	<field name="code">206.03</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_206"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Anticipo de cliente nacional parte relacionada</field>
+</record>
+
+<record id="account_tmpl_206_04" model="account.account.template">
+	<field name="code">206.04</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_206"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Anticipo de cliente extranjero parte relacionada</field>
+</record>
+
+<record id="account_tmpl_206_05" model="account.account.template">
+	<field name="code">206.05</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_206"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Otros anticipos de clientes</field>
+</record>
+
+<record id="account_tmpl_207_01" model="account.account.template">
+	<field name="code">207.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_207"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">IVA trasladado</field>
+</record>
+
+<record id="account_tmpl_207_02" model="account.account.template">
+	<field name="code">207.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_207"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">IEPS trasladado</field>
+</record>
+
+<record id="account_tmpl_208_01" model="account.account.template">
+	<field name="code">208.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_208"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">IVA trasladado cobrado</field>
+</record>
+
+<record id="account_tmpl_208_02" model="account.account.template">
+	<field name="code">208.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_208"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">IEPS trasladado cobrado</field>
+</record>
+
+<record id="account_tmpl_209_01" model="account.account.template">
+	<field name="code">209.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_209"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">IVA trasladado no cobrado</field>
+</record>
+
+<record id="account_tmpl_209_02" model="account.account.template">
+	<field name="code">209.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_209"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">IEPS trasladado no cobrado</field>
+</record>
+
+<record id="account_tmpl_210_01" model="account.account.template">
+	<field name="code">210.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_210"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Provisión de sueldos y salarios por pagar</field>
+</record>
+
+<record id="account_tmpl_210_02" model="account.account.template">
+	<field name="code">210.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_210"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Provisión de vacaciones por pagar</field>
+</record>
+
+<record id="account_tmpl_210_03" model="account.account.template">
+	<field name="code">210.03</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_210"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Provisión de aguinaldo por pagar</field>
+</record>
+
+<record id="account_tmpl_210_04" model="account.account.template">
+	<field name="code">210.04</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_210"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Provisión de fondo de ahorro por pagar</field>
+</record>
+
+<record id="account_tmpl_210_05" model="account.account.template">
+	<field name="code">210.05</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_210"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Provisión de asimilados a salarios por pagar</field>
+</record>
+
+<record id="account_tmpl_210_06" model="account.account.template">
+	<field name="code">210.06</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_210"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Provisión de anticipos o remanentes por distribuir</field>
+</record>
+
+<record id="account_tmpl_210_07" model="account.account.template">
+	<field name="code">210.07</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_210"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Provisión de otros sueldos y salarios por pagar</field>
+</record>
+
+<record id="account_tmpl_211_01" model="account.account.template">
+	<field name="code">211.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_211"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Provisión de IMSS patronal por pagar</field>
+</record>
+
+<record id="account_tmpl_211_02" model="account.account.template">
+	<field name="code">211.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_211"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Provisión de SAR por pagar</field>
+</record>
+
+<record id="account_tmpl_211_03" model="account.account.template">
+	<field name="code">211.03</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_211"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Provisión de infonavit por pagar</field>
+</record>
+
+<record id="account_tmpl_212_01" model="account.account.template">
+	<field name="code">212.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_212"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Provisión de impuesto estatal sobre nómina por pagar</field>
+</record>
+
+<record id="account_tmpl_213_01" model="account.account.template">
+	<field name="code">213.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_213"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">IVA por pagar</field>
+</record>
+
+<record id="account_tmpl_213_02" model="account.account.template">
+	<field name="code">213.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_213"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">IEPS por pagar</field>
+</record>
+
+<record id="account_tmpl_213_03" model="account.account.template">
+	<field name="code">213.03</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_213"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">ISR por pagar</field>
+</record>
+
+<record id="account_tmpl_213_04" model="account.account.template">
+	<field name="code">213.04</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_213"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Impuesto estatal sobre nómina por pagar</field>
+</record>
+
+<record id="account_tmpl_213_05" model="account.account.template">
+	<field name="code">213.05</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_213"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Impuesto estatal y municipal por pagar</field>
+</record>
+
+<record id="account_tmpl_213_06" model="account.account.template">
+	<field name="code">213.06</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_213"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Derechos por pagar</field>
+</record>
+
+<record id="account_tmpl_213_07" model="account.account.template">
+	<field name="code">213.07</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_213"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Otros impuestos por pagar</field>
+</record>
+
+<record id="account_tmpl_214_01" model="account.account.template">
+	<field name="code">214.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_214"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Dividendos por pagar</field>
+</record>
+
+<record id="account_tmpl_215_01" model="account.account.template">
+	<field name="code">215.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_215"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">PTU por pagar</field>
+</record>
+
+<record id="account_tmpl_215_02" model="account.account.template">
+	<field name="code">215.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_215"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">PTU por pagar de ejercicios anteriores</field>
+</record>
+
+<record id="account_tmpl_215_03" model="account.account.template">
+	<field name="code">215.03</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_215"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Provisión de PTU por pagar</field>
+</record>
+
+<record id="account_tmpl_216_01" model="account.account.template">
+	<field name="code">216.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_216"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Impuestos retenidos de ISR por sueldos y salarios</field>
+</record>
+
+<record id="account_tmpl_216_02" model="account.account.template">
+	<field name="code">216.02</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_216"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Impuestos retenidos de ISR por asimilados a salarios</field>
+</record>
+
+<record id="account_tmpl_216_03" model="account.account.template">
+	<field name="code">216.03</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_216"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Impuestos retenidos de ISR por arrendamiento</field>
+</record>
+
+<record id="account_tmpl_216_04" model="account.account.template">
+	<field name="code">216.04</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_216"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Impuestos retenidos de ISR por servicios profesionales</field>
+</record>
+
+<record id="account_tmpl_216_05" model="account.account.template">
+	<field name="code">216.05</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_216"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Impuestos retenidos de ISR por dividendos</field>
+</record>
+
+<record id="account_tmpl_216_06" model="account.account.template">
+	<field name="code">216.06</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_216"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Impuestos retenidos de ISR por intereses</field>
+</record>
+
+<record id="account_tmpl_216_07" model="account.account.template">
+	<field name="code">216.07</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_216"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Impuestos retenidos de ISR por pagos al extranjero</field>
+</record>
+
+<record id="account_tmpl_216_08" model="account.account.template">
+	<field name="code">216.08</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_216"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Impuestos retenidos de ISR por venta de acciones</field>
+</record>
+
+<record id="account_tmpl_216_09" model="account.account.template">
+	<field name="code">216.09</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_216"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Impuestos retenidos de ISR por venta de partes sociales</field>
+</record>
+
+<record id="account_tmpl_216_10" model="account.account.template">
+	<field name="code">216.10</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_216"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Impuestos retenidos de IVA</field>
+</record>
+
+<record id="account_tmpl_216_11" model="account.account.template">
+	<field name="code">216.11</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_216"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Retenciones de IMSS a los trabajadores</field>
+</record>
+
+<record id="account_tmpl_216_12" model="account.account.template">
+	<field name="code">216.12</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_216"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Otras impuestos retenidos</field>
+</record>
+
+<record id="account_tmpl_217_01" model="account.account.template">
+	<field name="code">217.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_217"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">Pagos realizados por cuenta de terceros</field>
+</record>
+
+<record id="account_tmpl_218_01" model="account.account.template">
+	<field name="code">218.01</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_218"/>
 	<field name="type">view</field>
 	<field name="user_type" ref="account.data_account_type_view"/>
 	<field name="name">Otros pasivos a corto plazo</field>
