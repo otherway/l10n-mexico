@@ -1025,6 +1025,15 @@ SUBCUENTAS DE ORDEN 2 (100.01 Activo a corto plazo)
 	<field name="name">IEPS acreditable pagado</field>
 </record>
 
+<record id="account_tmpl_118_04" model="account.account.template">
+	<field name="code">118.04</field>
+	<field name="reconcile" eval="False"/>
+	<field name="parent_id" ref="account_tmpl_118"/>
+	<field name="type">view</field>
+	<field name="user_type" ref="account.data_account_type_view"/>
+	<field name="name">IEPS pagado en importación</field>
+</record>
+
 <record id="account_tmpl_119_01" model="account.account.template">
 	<field name="code">119.01</field>
 	<field name="reconcile" eval="False"/>
@@ -1500,7 +1509,6 @@ SUBCUENTAS DE ORDEN 2 (100.02 Activo a largo plazo)
 	<field name="user_type" ref="account.data_account_type_view"/>
 	<field name="name">Edificios</field>
 </record>
-
 
 <record id="account_tmpl_153_01" model="account.account.template">
 	<field name="code">153.01</field>
@@ -9781,23 +9789,6 @@ SUBCUENTAS DE ORDEN 2 (800 Cuentas de orden)
 	<field name="name">Contra cuenta otras cuentas de orden</field>
 </record>
 
-
-<!--
-	 Cuenta Template 
--->
-     
-	<record id="vauxoo_mx_chart_template" model="account.chart.template">
-	    <field name="name">Plan de Cuentas para Mexico</field>
-	    <field name="account_root_id" ref="cuenta0"/>
-        <field name="tax_code_root_id" ref="vat_code_tax"/>
-	    <field name="bank_account_view_id" ref="cuenta1113"/>
-        <field name="property_account_receivable" ref="cuenta1122001000"/>
-        <field name="property_account_payable" ref="cuenta2122001000"/>
-        <field name="property_account_expense_categ" ref="cuenta6111001000"/>
-        <field name="property_account_income_categ" ref="cuenta5111001000"/>
-        <field name="currency_id" ref="base.MXN"/>
-	</record>
-   
   
 </data>
 </openerp>
