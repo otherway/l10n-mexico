@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-	<data noupdate="1">
+	<data noupdate="0">
 
 
 <!--
@@ -4127,7 +4127,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 -->
 
 <record id="account_tmpl_401_01" model="account.account.template">
-	<field name="code">401_01</field>
+	<field name="code">401.01</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4136,7 +4136,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_02" model="account.account.template">
-	<field name="code">401_02</field>
+	<field name="code">401.02</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4145,7 +4145,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_03" model="account.account.template">
-	<field name="code">401_03</field>
+	<field name="code">401.03</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4154,7 +4154,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_04" model="account.account.template">
-	<field name="code">401_04</field>
+	<field name="code">401.04</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4163,7 +4163,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_05" model="account.account.template">
-	<field name="code">401_05</field>
+	<field name="code">401.05</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4172,7 +4172,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_06" model="account.account.template">
-	<field name="code">401_06</field>
+	<field name="code">401.06</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4181,7 +4181,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_07" model="account.account.template">
-	<field name="code">401_07</field>
+	<field name="code">401.07</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4190,7 +4190,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_08" model="account.account.template">
-	<field name="code">401_08</field>
+	<field name="code">401.08</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4199,7 +4199,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_09" model="account.account.template">
-	<field name="code">401_09</field>
+	<field name="code">401.09</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4208,7 +4208,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_10" model="account.account.template">
-	<field name="code">401_10</field>
+	<field name="code">401.10</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4217,7 +4217,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_11" model="account.account.template">
-	<field name="code">401_11</field>
+	<field name="code">401.11</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4226,7 +4226,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_12" model="account.account.template">
-	<field name="code">401_12</field>
+	<field name="code">401.12</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4235,7 +4235,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_13" model="account.account.template">
-	<field name="code">401_13</field>
+	<field name="code">401.13</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4244,7 +4244,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_14" model="account.account.template">
-	<field name="code">401_14</field>
+	<field name="code">401.14</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4253,7 +4253,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_15" model="account.account.template">
-	<field name="code">401_15</field>
+	<field name="code">401.15</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4262,7 +4262,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_16" model="account.account.template">
-	<field name="code">401_16</field>
+	<field name="code">401.16</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4271,7 +4271,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_17" model="account.account.template">
-	<field name="code">401_17</field>
+	<field name="code">401.17</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4280,7 +4280,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_18" model="account.account.template">
-	<field name="code">401_18</field>
+	<field name="code">401.18</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4289,7 +4289,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_19" model="account.account.template">
-	<field name="code">401_19</field>
+	<field name="code">401.19</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4298,7 +4298,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_20" model="account.account.template">
-	<field name="code">401_20</field>
+	<field name="code">401.20</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4307,7 +4307,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_21" model="account.account.template">
-	<field name="code">401_21</field>
+	<field name="code">401.21</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4316,7 +4316,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_22" model="account.account.template">
-	<field name="code">401_22</field>
+	<field name="code">401.22</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4325,7 +4325,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_23" model="account.account.template">
-	<field name="code">401_23</field>
+	<field name="code">401.23</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4334,7 +4334,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_24" model="account.account.template">
-	<field name="code">401_24</field>
+	<field name="code">401.24</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4343,7 +4343,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_25" model="account.account.template">
-	<field name="code">401_25</field>
+	<field name="code">401.25</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4352,7 +4352,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_26" model="account.account.template">
-	<field name="code">401_26</field>
+	<field name="code">401.26</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4361,7 +4361,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_27" model="account.account.template">
-	<field name="code">401_27</field>
+	<field name="code">401.27</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4370,7 +4370,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_28" model="account.account.template">
-	<field name="code">401_28</field>
+	<field name="code">401.28</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4379,7 +4379,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_29" model="account.account.template">
-	<field name="code">401_29</field>
+	<field name="code">401.29</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4388,7 +4388,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_30" model="account.account.template">
-	<field name="code">401_30</field>
+	<field name="code">401.30</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4397,7 +4397,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_31" model="account.account.template">
-	<field name="code">401_31</field>
+	<field name="code">401.31</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4406,7 +4406,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_32" model="account.account.template">
-	<field name="code">401_32</field>
+	<field name="code">401.32</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4415,7 +4415,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_33" model="account.account.template">
-	<field name="code">401_33</field>
+	<field name="code">401.33</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4424,7 +4424,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_34" model="account.account.template">
-	<field name="code">401_34</field>
+	<field name="code">401.34</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4433,7 +4433,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_35" model="account.account.template">
-	<field name="code">401_35</field>
+	<field name="code">401.35</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4442,7 +4442,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_36" model="account.account.template">
-	<field name="code">401_36</field>
+	<field name="code">401.36</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4451,7 +4451,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_37" model="account.account.template">
-	<field name="code">401_37</field>
+	<field name="code">401.37</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4460,7 +4460,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_401_38" model="account.account.template">
-	<field name="code">401_38</field>
+	<field name="code">401.38</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_401"/>
 	<field name="type">view</field>
@@ -4469,7 +4469,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_402_01" model="account.account.template">
-	<field name="code">402_01</field>
+	<field name="code">402.01</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_402"/>
 	<field name="type">view</field>
@@ -4478,7 +4478,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_402_02" model="account.account.template">
-	<field name="code">402_02</field>
+	<field name="code">402.02</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_402"/>
 	<field name="type">view</field>
@@ -4487,7 +4487,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_402_03" model="account.account.template">
-	<field name="code">402_03</field>
+	<field name="code">402.03</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_402"/>
 	<field name="type">view</field>
@@ -4496,7 +4496,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_402_04" model="account.account.template">
-	<field name="code">402_04</field>
+	<field name="code">402.04</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_402"/>
 	<field name="type">view</field>
@@ -4505,7 +4505,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_403_01" model="account.account.template">
-	<field name="code">403_01</field>
+	<field name="code">403.01</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_403"/>
 	<field name="type">view</field>
@@ -4514,7 +4514,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_403_02" model="account.account.template">
-	<field name="code">403_02</field>
+	<field name="code">403.02</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_403"/>
 	<field name="type">view</field>
@@ -4523,7 +4523,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_403_03" model="account.account.template">
-	<field name="code">403_03</field>
+	<field name="code">403.03</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_403"/>
 	<field name="type">view</field>
@@ -4532,7 +4532,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_403_04" model="account.account.template">
-	<field name="code">403_04</field>
+	<field name="code">403.04</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_403"/>
 	<field name="type">view</field>
@@ -4541,7 +4541,7 @@ SUBCUENTAS DE ORDEN 2 (400 Ingresos)
 </record>
 
 <record id="account_tmpl_403_05" model="account.account.template">
-	<field name="code">403_05</field>
+	<field name="code">403.05</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_403"/>
 	<field name="type">view</field>
@@ -9408,7 +9408,7 @@ SUBCUENTAS DE ORDEN 1 (800 Cuentas de orden)
 </record>
 
 <record id="account_tmpl_810" model="account.account.template">
-	<field name="code">801</field>
+	<field name="code">810</field>
 	<field name="reconcile" eval="False"/>
 	<field name="parent_id" ref="account_tmpl_800"/>
 	<field name="type">view</field>
