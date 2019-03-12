@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <openerp>
-<data noupdate="True">
+<data noupdate="0">
 
     <!--
          Tax Code Template Configuration
