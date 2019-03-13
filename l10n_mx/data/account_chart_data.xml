@@ -19,6 +19,7 @@
         <field name="currency_id" ref="base.MXN"/>
         <field name="bank_account_view_id" ref="cuenta102_01"/>
 	    <field name="account_root_id" ref="account_tmpl_0"/>
+	    <field name="tax_code_root_id" ref="vat_code_tax"/>
     </record>
 
 <!--
@@ -42,6 +43,14 @@ Cuentas especificas del plan
     <record id='cuenta105_01' model='account.account.template'>
         <field name='name'>Clientes nacionales</field>
         <field name='code'>105.01.01</field>
+        <field name="chart_template_id" ref="mx_coa"/>
+        <field name="user_type" ref="account.data_account_type_receivable"/>
+        <field name="reconcile" eval="True"/>
+        <field name="parent_id" eval="account_tmpl_105_01"/>
+    </record>
+    <record id='cuenta105_02' model='account.account.template'>
+        <field name='name'>Clientes nacionales, Retenciones por garantía</field>
+        <field name='code'>105.01.02</field>
         <field name="chart_template_id" ref="mx_coa"/>
         <field name="user_type" ref="account.data_account_type_receivable"/>
         <field name="reconcile" eval="True"/>
@@ -138,6 +147,14 @@ Cuentas especificas del plan
     <record id='cuenta201_01' model='account.account.template'>
         <field name='name'>Proveedores nacionales</field>
         <field name='code'>201.01.01</field>
+        <field name="chart_template_id" ref="mx_coa"/>
+        <field name="user_type" ref="account.data_account_type_payable"/>
+        <field name="reconcile" eval="True"/>
+        <field name="parent_id" eval="account_tmpl_201_01"/>
+    </record>
+    <record id='cuenta201_02' model='account.account.template'>
+        <field name='name'>Proveedores nacionales, Retenciones por garantía</field>
+        <field name='code'>201.01.02</field>
         <field name="chart_template_id" ref="mx_coa"/>
         <field name="user_type" ref="account.data_account_type_payable"/>
         <field name="reconcile" eval="True"/>
