@@ -9,6 +9,7 @@
     <record id='cuenta102_01' model='account.account.template'>
         <field name='name'>Transferencias bancarias moneda nacional</field>
         <field name='code'>102.01.01</field>
+        <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_asset"/>
         <field name="reconcile" eval="True"/>
         <field name="parent_id" eval="account_tmpl_102_01"/>
