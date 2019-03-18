@@ -220,6 +220,14 @@ Cuentas especificas del plan
         <field name="user_type" ref="account.data_account_type_payable"/>
         <field name="parent_id" eval="account_tmpl_210_01"/>
     </record>
+    <record id='cuenta216_01' model='account.account.template'>
+        <field name='name'>Impuestos retenidos de ISR por sueldos y salarios</field>
+        <field name='code'>216.01.01</field>
+        <field name="chart_template_id" ref="mx_coa"/>
+        <field name="type">other</field>
+        <field name="user_type" ref="account.data_account_type_liability"/>
+        <field name="parent_id" eval="account_tmpl_216_01"/>
+    </record>
     <record id='cuenta216_03' model='account.account.template'>
         <field name='name'>Impuestos retenidos de ISR por arrendamiento</field>
         <field name='code'>216.03.01</field>
