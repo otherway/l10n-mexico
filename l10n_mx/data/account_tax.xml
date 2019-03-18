@@ -7,40 +7,52 @@
 		<field name="amount">0</field>
 		<field name="type">percent</field>
 		<field name="base_code_id" ref="account_tax_code_tmpl_iva0apb"/>
+        <field name="base_sign" eval="1.0"/>
 		<field name="tax_code_id" ref="account_tax_code_tmpl_iva0apc"/>
-		<field name="ref_base_code_id" ref="vat_code_receivable_net"/>
-		<field name="ref_tax_code_id" ref="vat_code_payable"/>
+		<field name="tax_sign" eval="1.0"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_rec_iapb"/>
+        <field name="ref_base_sign" eval="-1.0"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_rec_iva0apc"/>
+        <field name="ref_tax_sign" eval="-1.0"/>
 		<field name="type_tax_use">sale</field>
-         <field name="account_collected_id" ref="cuenta209_01"/>
-        <field name="account_paid_id" ref="cuenta209_01"/>
+        <field name="account_collected_id" ref="cuenta208_01"/>
+        <field name="account_paid_id" ref="cuenta208_01"/>
 	</record>
-
-<!-- 	<record id="tax11" model="account.tax.template">    -->
-<!--         <field name="chart_template_id" ref="mx_coa"/>    -->
-<!--         <field name="name">IVA(11%) VENTAS</field> -->
-<!-- 		<field name="amount">0.11</field> -->
-<!-- 		<field name="type">percent</field> -->
-<!-- 		<field name="base_code_id" ref="vat_code_base_due"/> -->
-<!-- 		<field name="tax_code_id" ref="vat_code_due_tva"/> -->
-<!-- 		<field name="ref_base_code_id" ref="vat_code_receivable_net"/> -->
-<!-- 		<field name="ref_tax_code_id" ref="vat_code_payable"/> -->
-<!-- 		<field name="type_tax_use">sale</field> -->
-<!--          <field name="account_collected_id" ref="cuenta2202113000"/> -->
-<!--         <field name="account_paid_id" ref="cuenta2202113000"/> -->
-<!-- 	</record> -->
 
 	<record id="tax12" model="account.tax.template">   
         <field name="chart_template_id" ref="mx_coa"/>   
         <field name="name">IVA(16%) VENTAS</field>
 		<field name="amount">0.16</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="vat_code_base_due"/>
-		<field name="tax_code_id" ref="vat_code_due_tva"/>
-		<field name="ref_base_code_id" ref="vat_code_receivable_net"/>
-		<field name="ref_tax_code_id" ref="vat_code_payable"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_iva16apb"/>
+        <field name="base_sign" eval="1.0"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_iva16apc"/>
+		<field name="tax_sign" eval="1.0"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_rec_iapb"/>
+        <field name="ref_base_sign" eval="-1.0"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_rec_iva16apc"/>
+        <field name="ref_tax_sign" eval="-1.0"/>
 		<field name="type_tax_use">sale</field>
-         <field name="account_collected_id" ref="cuenta209_01"/>
-        <field name="account_paid_id" ref="cuenta209_01"/>
+        <field name="account_collected_id" ref="cuenta208_01"/>
+        <field name="account_paid_id" ref="cuenta208_01"/>
+	</record>
+
+	<record id="tax16" model="account.tax.template">   
+        <field name="chart_template_id" ref="mx_coa"/>   
+        <field name="name">IVA RED(8%) VENTAS</field>
+		<field name="amount">0.08</field>
+		<field name="type">percent</field>
+		<field name="base_code_id" ref="account_tax_code_tmpl_iva8apb"/>
+        <field name="base_sign" eval="1.0"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_iva8apc"/>
+		<field name="tax_sign" eval="1.0"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_rec_iapb"/>
+        <field name="ref_base_sign" eval="-1.0"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_rec_iva8apc"/>
+        <field name="ref_tax_sign" eval="-1.0"/>
+		<field name="type_tax_use">sale</field>
+        <field name="account_collected_id" ref="cuenta208_01"/>
+        <field name="account_paid_id" ref="cuenta208_01"/>
 	</record>
 
 	<record id="tax1" model="account.tax.template">   
@@ -48,10 +60,14 @@
         <field name="name">RET IVA FLETES 4%</field>
 		<field name="amount">-0.04</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="vat_code_base_due"/>
-		<field name="tax_code_id" ref="vat_code_due_tva"/>
-		<field name="ref_base_code_id" ref="vat_code_receivable_net"/>
-		<field name="ref_tax_code_id" ref="vat_code_payable"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+        <field name="base_sign" eval="1.0"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+		<field name="tax_sign" eval="-1.0"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+        <field name="ref_base_sign" eval="-1.0"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+        <field name="ref_tax_sign" eval="1.0"/>
 		<field name="type_tax_use">purchase</field>
          <field name="account_collected_id" ref="cuenta216_10"/>
         <field name="account_paid_id" ref="cuenta216_10"/>
@@ -62,12 +78,16 @@
         <field name="name">RET IVA ARRENDAMIENTO 10%</field>
 		<field name="amount">-0.1</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="vat_code_base_due"/>
-		<field name="tax_code_id" ref="vat_code_due_tva"/>
-		<field name="ref_base_code_id" ref="vat_code_receivable_net"/>
-		<field name="ref_tax_code_id" ref="vat_code_payable"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+        <field name="base_sign" eval="1.0"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+		<field name="tax_sign" eval="-1.0"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+        <field name="ref_base_sign" eval="-1.0"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+        <field name="ref_tax_sign" eval="1.0"/>
 		<field name="type_tax_use">purchase</field>
-         <field name="account_collected_id" ref="cuenta216_10"/>
+        <field name="account_collected_id" ref="cuenta216_10"/>
         <field name="account_paid_id" ref="cuenta216_10"/>
 	</record>
 
@@ -76,12 +96,16 @@
         <field name="name">RET ISR ARRENDAMIENTO 10%</field>
 		<field name="amount">-0.1</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="vat_code_base_due"/>
-		<field name="tax_code_id" ref="vat_code_due_tva"/>
-		<field name="ref_base_code_id" ref="vat_code_receivable_net"/>
-		<field name="ref_tax_code_id" ref="vat_code_payable"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_retisrapb"/>
+        <field name="base_sign" eval="1.0"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_retisrapc"/>
+		<field name="tax_sign" eval="-1.0"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retisrapb"/>
+        <field name="ref_base_sign" eval="-1.0"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retisrapc"/>
+        <field name="ref_tax_sign" eval="1.0"/>
 		<field name="type_tax_use">purchase</field>
-         <field name="account_collected_id" ref="cuenta216_03"/>
+        <field name="account_collected_id" ref="cuenta216_03"/>
         <field name="account_paid_id" ref="cuenta216_03"/>
 	</record>
 
@@ -90,12 +114,16 @@
         <field name="name">RET ISR HONORARIOS 10%</field>
 		<field name="amount">-0.1</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="vat_code_base_due"/>
-		<field name="tax_code_id" ref="vat_code_due_tva"/>
-		<field name="ref_base_code_id" ref="vat_code_receivable_net"/>
-		<field name="ref_tax_code_id" ref="vat_code_payable"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_retisrapb"/>
+        <field name="base_sign" eval="1.0"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_retisrapc"/>
+		<field name="tax_sign" eval="-1.0"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retisrapb"/>
+        <field name="ref_base_sign" eval="-1.0"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retisrapc"/>
+        <field name="ref_tax_sign" eval="1.0"/>
 		<field name="type_tax_use">purchase</field>
-         <field name="account_collected_id" ref="cuenta216_04"/>
+        <field name="account_collected_id" ref="cuenta216_04"/>
         <field name="account_paid_id" ref="cuenta216_04"/>
 	</record>
 
@@ -104,12 +132,16 @@
         <field name="name">RETENCION IVA ARRENDAMIENTO 10.67%</field>
 		<field name="amount">-0.1067</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="vat_code_base_due"/>
-		<field name="tax_code_id" ref="vat_code_due_tva"/>
-		<field name="ref_base_code_id" ref="vat_code_receivable_net"/>
-		<field name="ref_tax_code_id" ref="vat_code_payable"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+        <field name="base_sign" eval="1.0"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+		<field name="tax_sign" eval="-1.0"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+        <field name="ref_base_sign" eval="-1.0"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+        <field name="ref_tax_sign" eval="1.0"/>
 		<field name="type_tax_use">purchase</field>
-         <field name="account_collected_id" ref="cuenta216_10"/>
+        <field name="account_collected_id" ref="cuenta216_10"/>
         <field name="account_paid_id" ref="cuenta216_10"/>
 	</record>
 
@@ -118,12 +150,16 @@
         <field name="name">RETENCION IVA HONORARIOS 10.67%</field>
 		<field name="amount">-0.1067</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="vat_code_base_due"/>
-		<field name="tax_code_id" ref="vat_code_due_tva"/>
-		<field name="ref_base_code_id" ref="vat_code_receivable_net"/>
-		<field name="ref_tax_code_id" ref="vat_code_payable"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+        <field name="base_sign" eval="1.0"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+		<field name="tax_sign" eval="-1.0"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+        <field name="ref_base_sign" eval="-1.0"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+        <field name="ref_tax_sign" eval="1.0"/>
 		<field name="type_tax_use">purchase</field>
-         <field name="account_collected_id" ref="cuenta216_10"/>
+        <field name="account_collected_id" ref="cuenta216_10"/>
         <field name="account_paid_id" ref="cuenta216_10"/>
 	</record>
 
@@ -132,41 +168,35 @@
         <field name="name">IVA(0%) COMPRAS</field>
 		<field name="amount">0</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="vat_code_base_due"/>
-		<field name="tax_code_id" ref="vat_code_due_tva"/>
-		<field name="ref_base_code_id" ref="vat_code_receivable_net"/>
-		<field name="ref_tax_code_id" ref="vat_code_payable"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_iva0pb"/>
+        <field name="base_sign" eval="1.0"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_iva0pc"/>
+		<field name="tax_sign" eval="1.0"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_rec_ipb"/>
+        <field name="ref_base_sign" eval="-1.0"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_rec_iva0pc"/>
+        <field name="ref_tax_sign" eval="-1.0"/>
 		<field name="type_tax_use">purchase</field>
-         <field name="account_collected_id" ref="cuenta119_01"/>
-        <field name="account_paid_id" ref="cuenta119_01"/>
+        <field name="account_collected_id" ref="cuenta118_01"/>
+        <field name="account_paid_id" ref="cuenta118_01"/>
 	</record>
-
-<!-- 	<record id="tax10" model="account.tax.template">    -->
-<!--         <field name="chart_template_id" ref="mx_coa"/>    -->
-<!--         <field name="name">IVA(11%) COMPRAS</field> -->
-<!-- 		<field name="amount">0.11</field> -->
-<!-- 		<field name="type">percent</field> -->
-<!-- 		<field name="base_code_id" ref="vat_code_base_due"/> -->
-<!-- 		<field name="tax_code_id" ref="vat_code_due_tva"/> -->
-<!-- 		<field name="ref_base_code_id" ref="vat_code_receivable_net"/> -->
-<!-- 		<field name="ref_tax_code_id" ref="vat_code_payable"/> -->
-<!-- 		<field name="type_tax_use">purchase</field> -->
-<!--          <field name="account_collected_id" ref="cuenta1151004000"/> -->
-<!--         <field name="account_paid_id" ref="cuenta1151004000"/> -->
-<!-- 	</record> -->
 
 	<record id="tax14" model="account.tax.template">   
         <field name="chart_template_id" ref="mx_coa"/>   
         <field name="name">IVA(16%) COMPRAS</field>
 		<field name="amount">0.16</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="vat_code_base_due"/>
-		<field name="tax_code_id" ref="vat_code_due_tva"/>
-		<field name="ref_base_code_id" ref="vat_code_receivable_net"/>
-		<field name="ref_tax_code_id" ref="vat_code_payable"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_iva16pb"/>
+        <field name="base_sign" eval="1.0"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_iva16pc"/>
+		<field name="tax_sign" eval="1.0"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_rec_ipb"/>
+        <field name="ref_base_sign" eval="-1.0"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_rec_iva16pc"/>
+        <field name="ref_tax_sign" eval="-1.0"/>
 		<field name="type_tax_use">purchase</field>
-         <field name="account_collected_id" ref="cuenta119_01"/>
-        <field name="account_paid_id" ref="cuenta119_01"/>
+        <field name="account_collected_id" ref="cuenta118_01"/>
+        <field name="account_paid_id" ref="cuenta118_01"/>
 	</record>
 	
 	<record id="tax15" model="account.tax.template">   
@@ -174,28 +204,18 @@
         <field name="name">IVA RED(8%) COMPRAS</field>
 		<field name="amount">0.08</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="vat_code_base_due"/>
-		<field name="tax_code_id" ref="vat_code_due_tva"/>
-		<field name="ref_base_code_id" ref="vat_code_receivable_net"/>
-		<field name="ref_tax_code_id" ref="vat_code_payable"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_iva8pb"/>
+        <field name="base_sign" eval="1.0"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_iva8pc"/>
+		<field name="tax_sign" eval="1.0"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_rec_ipb"/>
+        <field name="ref_base_sign" eval="-1.0"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_rec_iva8pc"/>
+        <field name="ref_tax_sign" eval="-1.0"/>
 		<field name="type_tax_use">purchase</field>
-         <field name="account_collected_id" ref="cuenta119_01"/>
-        <field name="account_paid_id" ref="cuenta119_01"/>
+        <field name="account_collected_id" ref="cuenta118_01"/>
+        <field name="account_paid_id" ref="cuenta118_01"/>
 	</record>	
 
-	<record id="tax16" model="account.tax.template">   
-        <field name="chart_template_id" ref="mx_coa"/>   
-        <field name="name">IVA RED(8%) VENTAS</field>
-		<field name="amount">0.08</field>
-		<field name="type">percent</field>
-		<field name="base_code_id" ref="vat_code_base_due"/>
-		<field name="tax_code_id" ref="vat_code_due_tva"/>
-		<field name="ref_base_code_id" ref="vat_code_receivable_net"/>
-		<field name="ref_tax_code_id" ref="vat_code_payable"/>
-		<field name="type_tax_use">sale</field>
-         <field name="account_collected_id" ref="cuenta209_01"/>
-        <field name="account_paid_id" ref="cuenta209_01"/>
-	</record>
-	
   </data>
 </openerp>

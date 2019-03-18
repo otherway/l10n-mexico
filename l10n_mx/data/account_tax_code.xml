@@ -76,32 +76,64 @@
 		<field name="sign">1.0</field>
 	</record>
 
+	<!-- Rectificativas -->
+
+	<record id="account_tax_code_tmpl_rec_iapc" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_biapc"/>
+		<field name="code">REC.IAP.C</field>
+		<field name="name">Rectificación impuestos a pagar. Cuotas</field>
+		<field name="sign">1.0</field>
+	</record>
+
+	<record id="account_tax_code_tmpl_rec_ipc" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_biapc"/>
+		<field name="code">REC.IP.C</field>
+		<field name="name">Rectificación impuestos pagados. Cuotas</field>
+		<field name="sign">1.0</field>
+	</record>
+
+
+	<record id="account_tax_code_tmpl_rec_iapb" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_biapb"/>
+		<field name="code">REC.IAP.B</field>
+		<field name="name">Rectificación impuestos a pagar. Bases</field>
+		<field name="sign">1.0</field>
+	</record>
+
+	<record id="account_tax_code_tmpl_rec_ipb" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_biapb"/>
+		<field name="code">REC.IP.B</field>
+		<field name="name">Rectificación impuestos pagados. Bases</field>
+		<field name="sign">1.0</field>
+	</record>
+		
+
 	<!-- Criterio de caja -->
 	<record id="account_tax_code_tmpl_incc" model="account.tax.code.template">
 		<field name="parent_id" ref="account_tax_code_tmpl_binpc"/>
 		<field name="code">INC.C</field>
-		<field name="name">Balance de impuestos no cobrados. Cuotas</field>
+		<field name="name">Impuestos no cobrados. Cuotas</field>
 		<field name="sign">1.0</field>
 	</record>
 
 	<record id="account_tax_code_tmpl_inpc" model="account.tax.code.template">
 		<field name="parent_id" ref="account_tax_code_tmpl_binpc"/>
 		<field name="code">INP.C</field>
-		<field name="name">Balance de impuestos no pagados. Cuotas</field>
+		<field name="name">Impuestos no pagados. Cuotas</field>
 		<field name="sign">1.0</field>
 	</record>
 
 	<record id="account_tax_code_tmpl_incb" model="account.tax.code.template">
 		<field name="parent_id" ref="account_tax_code_tmpl_binpb"/>
 		<field name="code">INC.B</field>
-		<field name="name">Balance de impuestos no cobrados. Bases</field>
+		<field name="name">Impuestos no cobrados. Bases</field>
 		<field name="sign">1.0</field>
 	</record>
 
 	<record id="account_tax_code_tmpl_inpb" model="account.tax.code.template">
 		<field name="parent_id" ref="account_tax_code_tmpl_binpb"/>
 		<field name="code">INP.B</field>
-		<field name="name">Balance de impuestos no pagados. Bases</field>
+		<field name="name">Impuestos no pagados. Bases</field>
 		<field name="sign">1.0</field>
 	</record>
 
@@ -159,7 +191,7 @@
 	</record>
 
 	<record id="account_tax_code_tmpl_iva8pc" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_ipb"/>
+		<field name="parent_id" ref="account_tax_code_tmpl_ipc"/>
 		<field name="code">IVA8P.C</field>
 		<field name="name">IVA pagado (8%). Cuota</field>
 		<field name="sign">1.0</field>
@@ -221,6 +253,64 @@
 		<field name="sign">1.0</field>
 	</record>
 
+	<!-- Rectificativas -->
+
+	<record id="account_tax_code_tmpl_rec_iva0apc" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_rec_iapc"/>
+		<field name="code">REC.IVA0AP.C</field>
+		<field name="name">Rectificación IVA a pagar (0%). Cuota</field>
+		<field name="sign">1.0</field>
+	</record>
+
+	<record id="account_tax_code_tmpl_rec_iva16apc" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_rec_iapc"/>
+		<field name="code">REC.IVA16AP.C</field>
+		<field name="name">Rectificación IVA a pagar (16%). Cuota</field>
+		<field name="sign">1.0</field>
+	</record>
+
+	<record id="account_tax_code_tmpl_rec_iva8apc" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_rec_iapc"/>
+		<field name="code">REC.IVA8AP.C</field>
+		<field name="name">Rectificación IVA a pagar (8%). Cuota</field>
+		<field name="sign">1.0</field>
+	</record>
+
+	<record id="account_tax_code_tmpl_rec_retivaapc" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_rec_iapc"/>
+		<field name="code">REC.RETIVA.C</field>
+		<field name="name">Rectificación RET IVA. Cuota</field>
+		<field name="sign">1.0</field>
+	</record>
+
+	<record id="account_tax_code_tmpl_rec_retisrapc" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_rec_iapc"/>
+		<field name="code">REC.RETISR.C</field>
+		<field name="name">Rectificación RET ISR. Cuota</field>
+		<field name="sign">1.0</field>
+	</record>
+
+	<record id="account_tax_code_tmpl_rec_iva0pc" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_rec_ipc"/>
+		<field name="code">REC.IVA0P.C</field>
+		<field name="name">Rectificación IVA pagado (0%). Cuota</field>
+		<field name="sign">1.0</field>
+	</record>
+
+	<record id="account_tax_code_tmpl_rec_iva16pc" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_rec_ipc"/>
+		<field name="code">REC.IVA16P.C</field>
+		<field name="name">Rectificación IVA pagado (16%). Cuota</field>
+		<field name="sign">1.0</field>
+	</record>
+
+	<record id="account_tax_code_tmpl_rec_iva8pc" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_rec_ipc"/>
+		<field name="code">REC.IVA8P.C</field>
+		<field name="name">Rectificación IVA pagado (8%). Cuota</field>
+		<field name="sign">1.0</field>
+	</record>
+
 	<!-- Criterio de caja -->
 
 	<record id="account_tax_code_tmpl_iva0ncc" model="account.tax.code.template">
@@ -274,91 +364,54 @@
 
 
 	<record id="account_tax_code_tmpl_iva0ncb" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_incc"/>
+		<field name="parent_id" ref="account_tax_code_tmpl_incb"/>
 		<field name="code">IVA0NC.B</field>
 		<field name="name">IVA no cobrado (0%). Base</field>
 		<field name="sign">1.0</field>
 	</record>
 
 	<record id="account_tax_code_tmpl_iva16ncb" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_incc"/>
+		<field name="parent_id" ref="account_tax_code_tmpl_incb"/>
 		<field name="code">IVA16NC.B</field>
 		<field name="name">IVA no cobrado (16%). Base</field>
 		<field name="sign">1.0</field>
 	</record>
 
 	<record id="account_tax_code_tmpl_iva8ncb" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_incc"/>
+		<field name="parent_id" ref="account_tax_code_tmpl_incb"/>
 		<field name="code">IVA8NC.B</field>
 		<field name="name">IVA no cobrado (8%). Base</field>
 		<field name="sign">1.0</field>
 	</record>
 
 	<record id="account_tax_code_tmpl_retivancb" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_incc"/>
+		<field name="parent_id" ref="account_tax_code_tmpl_incb"/>
 		<field name="code">RETIVANC.B</field>
 		<field name="name">RET IVA no cobrada. Base</field>
 		<field name="sign">1.0</field>
 	</record>
 
 	<record id="account_tax_code_tmpl_iva0npb" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_inpc"/>
+		<field name="parent_id" ref="account_tax_code_tmpl_inpb"/>
 		<field name="code">IVA0NP.B</field>
 		<field name="name">IVA no pagado (0%). Base</field>
 		<field name="sign">1.0</field>
 	</record>
 
 	<record id="account_tax_code_tmpl_iva16npb" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_inpc"/>
+		<field name="parent_id" ref="account_tax_code_tmpl_inpb"/>
 		<field name="code">IVA16NP.B</field>
 		<field name="name">IVA no pagado (16%). Base</field>
 		<field name="sign">1.0</field>
 	</record>
 
 	<record id="account_tax_code_tmpl_iva8npb" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_inpc"/>
+		<field name="parent_id" ref="account_tax_code_tmpl_inpb"/>
 		<field name="code">IVA8NC.B</field>
 		<field name="name">IVA no pagado (8%). Base</field>
 		<field name="sign">1.0</field>
 	</record>
 
-
-
-
-	<record model="account.tax.code.template" id="vat_code_tax">
-		<field name="name">(OLD) Impuestos</field>
-	</record>
-	
-	<record model="account.tax.code.template" id="vat_code_balance_net">
-		<field name="name">(OLD) Balance de impuestos a pagar</field>
-		<field name="parent_id" ref="vat_code_tax"/>
-	</record>
-
-	<record model="account.tax.code.template" id="vat_code_due_tva">
-		<field name="name">(OLD) Impuestos a pagar</field>
-		<field name="parent_id" ref="vat_code_balance_net"/>
-	</record>
-
-	<record model="account.tax.code.template" id="vat_code_payable">
-		<field name="name">(OLD) Impuestos pagados</field>
-		<field name="parent_id" ref="vat_code_balance_net"/>
-	</record>
-
-	<record model="account.tax.code.template" id="vat_code_base_net">
-		<field name="name">(OLD) Base de impuestos</field>
-		<field name="parent_id" ref="vat_code_tax"/>
-	</record>
-
-
-	<record model="account.tax.code.template" id="vat_code_base_due">
-		<field name="name">(OLD) Base de impuestos en ventas</field>
-		<field name="parent_id" ref="vat_code_base_net"/>
-	</record>
-
-	<record model="account.tax.code.template" id="vat_code_receivable_net">
-		<field name="name">(OLD) Base de impuestos en compras</field>
-		<field name="parent_id" ref="vat_code_base_net"/>
-	</record>
 
 </data>
 </openerp>

@@ -20,7 +20,7 @@
         <field name="currency_id" ref="base.MXN"/>
         <field name="bank_account_view_id" ref="cuenta102_01"/>
 	    <field name="account_root_id" ref="account_tmpl_0"/>
-	    <field name="tax_code_root_id" ref="vat_code_tax"/>
+	    <field name="tax_code_root_id" ref="account_tax_code_template_root"/>
     </record>
 
 <!--
