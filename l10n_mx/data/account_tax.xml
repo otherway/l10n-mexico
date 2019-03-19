@@ -4,6 +4,7 @@
 	<record id="tax9" model="account.tax.template">   
         <field name="chart_template_id" ref="mx_coa"/>   
         <field name="name">IVA(0%) VENTAS</field>
+        <field name="description">IVA0V</field>
 		<field name="amount">0</field>
 		<field name="type">percent</field>
 		<field name="base_code_id" ref="account_tax_code_tmpl_iva0apb"/>
@@ -22,6 +23,7 @@
 	<record id="tax12" model="account.tax.template">   
         <field name="chart_template_id" ref="mx_coa"/>   
         <field name="name">IVA(16%) VENTAS</field>
+        <field name="description">IVA16V</field>
 		<field name="amount">0.16</field>
 		<field name="type">percent</field>
 		<field name="base_code_id" ref="account_tax_code_tmpl_iva16apb"/>
@@ -40,6 +42,7 @@
 	<record id="tax16" model="account.tax.template">   
         <field name="chart_template_id" ref="mx_coa"/>   
         <field name="name">IVA RED(8%) VENTAS</field>
+        <field name="description">IVA8V</field>
 		<field name="amount">0.08</field>
 		<field name="type">percent</field>
 		<field name="base_code_id" ref="account_tax_code_tmpl_iva8apb"/>
@@ -58,15 +61,16 @@
 	<record id="tax1" model="account.tax.template">   
         <field name="chart_template_id" ref="mx_coa"/>   
         <field name="name">RET IVA FLETES 4%</field>
+        <field name="description">RIVAF4C</field>
 		<field name="amount">-0.04</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_retivapb"/>
         <field name="base_sign" eval="1.0"/>
-		<field name="tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_retivapc"/>
 		<field name="tax_sign" eval="-1.0"/>
-		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retivapb"/>
         <field name="ref_base_sign" eval="-1.0"/>
-		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retivapc"/>
         <field name="ref_tax_sign" eval="1.0"/>
 		<field name="type_tax_use">purchase</field>
          <field name="account_collected_id" ref="cuenta216_10"/>
@@ -76,15 +80,16 @@
 	<record id="tax2" model="account.tax.template">   
         <field name="chart_template_id" ref="mx_coa"/>   
         <field name="name">RET IVA ARRENDAMIENTO 10%</field>
+        <field name="description">RIVAA10C</field>
 		<field name="amount">-0.1</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_retivapb"/>
         <field name="base_sign" eval="1.0"/>
-		<field name="tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_retivapc"/>
 		<field name="tax_sign" eval="-1.0"/>
-		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retivapb"/>
         <field name="ref_base_sign" eval="-1.0"/>
-		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retivapc"/>
         <field name="ref_tax_sign" eval="1.0"/>
 		<field name="type_tax_use">purchase</field>
         <field name="account_collected_id" ref="cuenta216_10"/>
@@ -94,15 +99,16 @@
 	<record id="tax3" model="account.tax.template">   
         <field name="chart_template_id" ref="mx_coa"/>   
         <field name="name">RET ISR ARRENDAMIENTO 10%</field>
+        <field name="description">RISRA10C</field>
 		<field name="amount">-0.1</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="account_tax_code_tmpl_retisrapb"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_retisrpb"/>
         <field name="base_sign" eval="1.0"/>
-		<field name="tax_code_id" ref="account_tax_code_tmpl_retisrapc"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_retisrpc"/>
 		<field name="tax_sign" eval="-1.0"/>
-		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retisrapb"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retisrpb"/>
         <field name="ref_base_sign" eval="-1.0"/>
-		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retisrapc"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retisrpc"/>
         <field name="ref_tax_sign" eval="1.0"/>
 		<field name="type_tax_use">purchase</field>
         <field name="account_collected_id" ref="cuenta216_03"/>
@@ -112,15 +118,16 @@
 	<record id="tax5" model="account.tax.template">   
         <field name="chart_template_id" ref="mx_coa"/>   
         <field name="name">RET ISR HONORARIOS 10%</field>
+        <field name="description">RISRH10C</field>
 		<field name="amount">-0.1</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="account_tax_code_tmpl_retisrapb"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_retisrpb"/>
         <field name="base_sign" eval="1.0"/>
-		<field name="tax_code_id" ref="account_tax_code_tmpl_retisrapc"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_retisrpc"/>
 		<field name="tax_sign" eval="-1.0"/>
-		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retisrapb"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retisrpb"/>
         <field name="ref_base_sign" eval="-1.0"/>
-		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retisrapc"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retisrpc"/>
         <field name="ref_tax_sign" eval="1.0"/>
 		<field name="type_tax_use">purchase</field>
         <field name="account_collected_id" ref="cuenta216_04"/>
@@ -129,16 +136,17 @@
 
 	<record id="tax7" model="account.tax.template">   
         <field name="chart_template_id" ref="mx_coa"/>   
-        <field name="name">RETENCION IVA ARRENDAMIENTO 10.67%</field>
+        <field name="name">RET IVA ARRENDAMIENTO 10.67%</field>
+        <field name="description">RIVAA1067C</field>
 		<field name="amount">-0.1067</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_retivapb"/>
         <field name="base_sign" eval="1.0"/>
-		<field name="tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_retivapc"/>
 		<field name="tax_sign" eval="-1.0"/>
-		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retivapb"/>
         <field name="ref_base_sign" eval="-1.0"/>
-		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retivapc"/>
         <field name="ref_tax_sign" eval="1.0"/>
 		<field name="type_tax_use">purchase</field>
         <field name="account_collected_id" ref="cuenta216_10"/>
@@ -147,16 +155,17 @@
 
 	<record id="tax8" model="account.tax.template">   
         <field name="chart_template_id" ref="mx_coa"/>   
-        <field name="name">RETENCION IVA HONORARIOS 10.67%</field>
+        <field name="name">RET IVA HONORARIOS 10.67%</field>
+        <field name="description">RIVAH1067C</field>
 		<field name="amount">-0.1067</field>
 		<field name="type">percent</field>
-		<field name="base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+		<field name="base_code_id" ref="account_tax_code_tmpl_retivapb"/>
         <field name="base_sign" eval="1.0"/>
-		<field name="tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+		<field name="tax_code_id" ref="account_tax_code_tmpl_retivapc"/>
 		<field name="tax_sign" eval="-1.0"/>
-		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retivaapb"/>
+		<field name="ref_base_code_id" ref="account_tax_code_tmpl_retivapb"/>
         <field name="ref_base_sign" eval="-1.0"/>
-		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retivaapc"/>
+		<field name="ref_tax_code_id" ref="account_tax_code_tmpl_retivapc"/>
         <field name="ref_tax_sign" eval="1.0"/>
 		<field name="type_tax_use">purchase</field>
         <field name="account_collected_id" ref="cuenta216_10"/>
@@ -166,6 +175,7 @@
 	<record id="tax13" model="account.tax.template">   
         <field name="chart_template_id" ref="mx_coa"/>   
         <field name="name">IVA(0%) COMPRAS</field>
+        <field name="description">IVA0C</field>
 		<field name="amount">0</field>
 		<field name="type">percent</field>
 		<field name="base_code_id" ref="account_tax_code_tmpl_iva0pb"/>
@@ -184,6 +194,7 @@
 	<record id="tax14" model="account.tax.template">   
         <field name="chart_template_id" ref="mx_coa"/>   
         <field name="name">IVA(16%) COMPRAS</field>
+        <field name="description">IVA16C</field>
 		<field name="amount">0.16</field>
 		<field name="type">percent</field>
 		<field name="base_code_id" ref="account_tax_code_tmpl_iva16pb"/>
@@ -202,6 +213,7 @@
 	<record id="tax15" model="account.tax.template">   
         <field name="chart_template_id" ref="mx_coa"/>   
         <field name="name">IVA RED(8%) COMPRAS</field>
+        <field name="description">IVA8C</field>
 		<field name="amount">0.08</field>
 		<field name="type">percent</field>
 		<field name="base_code_id" ref="account_tax_code_tmpl_iva8pb"/>

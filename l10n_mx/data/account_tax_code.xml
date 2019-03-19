@@ -162,20 +162,6 @@
 		<field name="sign">1.0</field>
 	</record>
 
-	<record id="account_tax_code_tmpl_retivaapc" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_iapc"/>
-		<field name="code">RETIVA.C</field>
-		<field name="name">RET IVA. Cuota</field>
-		<field name="sign">1.0</field>
-	</record>
-
-	<record id="account_tax_code_tmpl_retisrapc" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_iapc"/>
-		<field name="code">RETISR.C</field>
-		<field name="name">RET ISR. Cuota</field>
-		<field name="sign">1.0</field>
-	</record>
-
 	<record id="account_tax_code_tmpl_iva0pc" model="account.tax.code.template">
 		<field name="parent_id" ref="account_tax_code_tmpl_ipc"/>
 		<field name="code">IVA0P.C</field>
@@ -197,6 +183,21 @@
 		<field name="sign">1.0</field>
 	</record>
 
+	<record id="account_tax_code_tmpl_retivapc" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_ipc"/>
+		<field name="code">RETIVA.C</field>
+		<field name="name">RET IVA. Cuota</field>
+		<field name="sign">1.0</field>
+	</record>
+
+	<record id="account_tax_code_tmpl_retisrpc" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_ipc"/>
+		<field name="code">RETISR.C</field>
+		<field name="name">RET ISR. Cuota</field>
+		<field name="sign">1.0</field>
+	</record>
+
+
 	<record id="account_tax_code_tmpl_iva0apb" model="account.tax.code.template">
 		<field name="parent_id" ref="account_tax_code_tmpl_iapb"/>
 		<field name="code">IVA0AP.B</field>
@@ -215,20 +216,6 @@
 		<field name="parent_id" ref="account_tax_code_tmpl_iapb"/>
 		<field name="code">IVA8AP.B</field>
 		<field name="name">IVA a pagar (8%). Base</field>
-		<field name="sign">1.0</field>
-	</record>
-
-	<record id="account_tax_code_tmpl_retivaapb" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_iapb"/>
-		<field name="code">RETIVA.B</field>
-		<field name="name">RET IVA. Base</field>
-		<field name="sign">1.0</field>
-	</record>
-
-	<record id="account_tax_code_tmpl_retisrapb" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_iapb"/>
-		<field name="code">RETISR.B</field>
-		<field name="name">RET ISR. Base</field>
 		<field name="sign">1.0</field>
 	</record>
 
@@ -253,6 +240,21 @@
 		<field name="sign">1.0</field>
 	</record>
 
+	<record id="account_tax_code_tmpl_retivapb" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_ipb"/>
+		<field name="code">RETIVA.B</field>
+		<field name="name">RET IVA. Base</field>
+		<field name="sign">1.0</field>
+	</record>
+
+	<record id="account_tax_code_tmpl_retisrpb" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_ipb"/>
+		<field name="code">RETISR.B</field>
+		<field name="name">RET ISR. Base</field>
+		<field name="sign">1.0</field>
+	</record>
+
+
 	<!-- Rectificativas -->
 
 	<record id="account_tax_code_tmpl_rec_iva0apc" model="account.tax.code.template">
@@ -273,20 +275,6 @@
 		<field name="parent_id" ref="account_tax_code_tmpl_rec_iapc"/>
 		<field name="code">REC.IVA8AP.C</field>
 		<field name="name">Rectificación IVA a pagar (8%). Cuota</field>
-		<field name="sign">1.0</field>
-	</record>
-
-	<record id="account_tax_code_tmpl_rec_retivaapc" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_rec_iapc"/>
-		<field name="code">REC.RETIVA.C</field>
-		<field name="name">Rectificación RET IVA. Cuota</field>
-		<field name="sign">1.0</field>
-	</record>
-
-	<record id="account_tax_code_tmpl_rec_retisrapc" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_rec_iapc"/>
-		<field name="code">REC.RETISR.C</field>
-		<field name="name">Rectificación RET ISR. Cuota</field>
 		<field name="sign">1.0</field>
 	</record>
 
@@ -311,6 +299,21 @@
 		<field name="sign">1.0</field>
 	</record>
 
+	<record id="account_tax_code_tmpl_rec_retivapc" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_rec_ipc"/>
+		<field name="code">REC.RETIVA.C</field>
+		<field name="name">Rectificación RET IVA. Cuota</field>
+		<field name="sign">1.0</field>
+	</record>
+
+	<record id="account_tax_code_tmpl_rec_retisrpc" model="account.tax.code.template">
+		<field name="parent_id" ref="account_tax_code_tmpl_rec_ipc"/>
+		<field name="code">REC.RETISR.C</field>
+		<field name="name">Rectificación RET ISR. Cuota</field>
+		<field name="sign">1.0</field>
+	</record>
+
+
 	<!-- Criterio de caja -->
 
 	<record id="account_tax_code_tmpl_iva0ncc" model="account.tax.code.template">
@@ -334,13 +337,6 @@
 		<field name="sign">1.0</field>
 	</record>
 
-	<record id="account_tax_code_tmpl_retivancc" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_incc"/>
-		<field name="code">RETIVANC.C</field>
-		<field name="name">RET IVA no cobrada. Cuota</field>
-		<field name="sign">1.0</field>
-	</record>
-
 	<record id="account_tax_code_tmpl_iva0npc" model="account.tax.code.template">
 		<field name="parent_id" ref="account_tax_code_tmpl_inpc"/>
 		<field name="code">IVA0NP.C</field>
@@ -357,7 +353,7 @@
 
 	<record id="account_tax_code_tmpl_iva8npc" model="account.tax.code.template">
 		<field name="parent_id" ref="account_tax_code_tmpl_inpc"/>
-		<field name="code">IVA8NC.C</field>
+		<field name="code">IVA8NP.C</field>
 		<field name="name">IVA no pagado (8%). Cuota</field>
 		<field name="sign">1.0</field>
 	</record>
@@ -384,13 +380,6 @@
 		<field name="sign">1.0</field>
 	</record>
 
-	<record id="account_tax_code_tmpl_retivancb" model="account.tax.code.template">
-		<field name="parent_id" ref="account_tax_code_tmpl_incb"/>
-		<field name="code">RETIVANC.B</field>
-		<field name="name">RET IVA no cobrada. Base</field>
-		<field name="sign">1.0</field>
-	</record>
-
 	<record id="account_tax_code_tmpl_iva0npb" model="account.tax.code.template">
 		<field name="parent_id" ref="account_tax_code_tmpl_inpb"/>
 		<field name="code">IVA0NP.B</field>
@@ -407,7 +396,7 @@
 
 	<record id="account_tax_code_tmpl_iva8npb" model="account.tax.code.template">
 		<field name="parent_id" ref="account_tax_code_tmpl_inpb"/>
-		<field name="code">IVA8NC.B</field>
+		<field name="code">IVA8NP.B</field>
 		<field name="name">IVA no pagado (8%). Base</field>
 		<field name="sign">1.0</field>
 	</record>
